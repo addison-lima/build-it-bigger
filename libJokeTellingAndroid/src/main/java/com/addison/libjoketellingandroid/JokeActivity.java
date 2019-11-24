@@ -21,7 +21,7 @@ public class JokeActivity extends AppCompatActivity {
                 && receivedIntent.hasExtra(INTENT_JOKE)) {
             String joke = receivedIntent.getStringExtra(INTENT_JOKE);
             TextView jokeTextView = findViewById(R.id.tv_joke);
-            jokeTextView.setText(joke);
+            jokeTextView.setText((joke == null) ? getString(R.string.no_joke) : joke);
         } else {
             Toast.makeText(this, getString(R.string.error), Toast.LENGTH_LONG).show();
             finish();
