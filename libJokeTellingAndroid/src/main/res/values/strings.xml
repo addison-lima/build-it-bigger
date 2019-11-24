@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Joke Telling</string>
+    <string name="error">An unexpected error occurred.</string>
+    <string name="joke" translatable="false">Knock Knock Knock Knock Knock Knock Knock Knock Knock Knock Knock Knock</string>
+</resources>
